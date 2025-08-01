@@ -159,6 +159,48 @@ section.active {
         overflow: auto;
     }
 }
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .home-detail h1 {
+    font-size: 2rem;
+  }
+
+  .home-detail h2 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    display: block;
+  }
+
+  .home-detail h2 span {
+    animation: none;
+    -webkit-text-stroke: 0;
+    color: var(--main-color);
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .home-detail h2 span::before {
+    animation: none;
+    content: attr(data-text);
+    width: auto;
+    white-space: normal;
+  }
+
+  .home-img .img-box {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .home-detail p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+}
 
 .home {
     display: flex;
